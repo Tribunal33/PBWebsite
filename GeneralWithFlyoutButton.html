@@ -1,0 +1,124 @@
+<html>
+
+<link rel="stylesheet" href="site.css" type="text/css" media="screen, projection"/>
+	<!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+    <![endif]-->
+			
+	<script type="text/javascript" src="jquery-1.3.1.min.js"></script>	
+	<script type="text/javascript" language="javascript" src="jquery.dropdownPlain.js"></script>
+
+    <script type="text/javascript" src="slick.min.js"></script>
+
+    <script type="text/javascript" src="slick.js"></script>
+
+</head>
+
+<body> 
+	<body bgcolor = "#1D1C1E">
+    <nav class="" style="background: url('http://www.colorhexa.com/680094.png'); height: 65px">
+	<div id="page-wrap" style="height: 40px">
+
+        <ul class="dropdown">
+        	<li><a href="#">About Us</a>
+        		<ul class="sub_menu">
+        			 <li><a href="#">Paola Pilaspilas</a></li>
+        			 <li>
+        				<a href="#">Beau Grier</a>
+        			 </li>
+
+        		</ul>
+        	</li>
+        	<li><a href="Lingo.html">Lingo</a>
+        		<ul class="sub_menu">
+        			<li><a href="General.html">General</a></li>
+        			<li><a href="#">TBA 2,2</a></li>
+        			 <li><a href="#">TBA 2,3</a></li>
+        			 <li>
+        				<a href="#">TBA 2,4</a>
+        				<ul>
+        					<li><a href="#">TBA 2,4,1</a></li>
+        					<li><a href="#">TBA 2,4,2</a></li>
+        					<li><a href="#">TBA 2,4,3</a></li>
+        				</ul>
+        			 </li>
+        		</ul>
+        	</li>
+        	<li><a href="#">Automation</a>
+        		<ul class="sub_menu">
+        			 <li>
+        				<a href="#">Setting up</a>
+        	</li>
+        			 <li>
+        				<a href="#">Examples</a>
+        				<ul>
+        					<li><a href="#">WALCA</a></li>
+        					<li><a href="#">COSUS</a></li>
+        					<li><a href="#">CVS</a></li>
+        					<li><a href="#">SAMUS</a></li>
+        				</ul>
+        			 </li>
+        		</ul>
+        	</li>
+        	<li><a href="#">Survival Tips</a>
+        		<ul class="sub_menu">
+        			 <li><a href="#">From QA</a></li>
+        			 <li><a href="#">From Devs</a></li>
+        			 <li><a href="#">From PM &amp; BA</a></li>
+                </ul>
+            </li>
+		
+	</div>
+</nav>
+
+<!Dropdown Flyout List for Lingo>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+
+  $("#flipServer").click(function() {
+  	$("#panelServer").slideToggle("slow");
+  });
+
+});
+</script>
+ 
+<style> 
+#panel,#flip,#panelServer,#flipServer
+{
+padding:5px;
+text-align:center;
+float: left;
+
+color: #ffffff;
+background-color:#680094;
+border:solid 2px #c3c3c3;
+}
+#panel,#panelServer
+{
+padding:1px;
+display:none;
+}
+
+
+
+</style>
+</head>
+
+
+<div id="flip">Phoenix Products</div>
+<div id="panel"><font size="4">Phoenix Products are most likely navigated to from the Stationery & Cards categories on various vendors.  Essentially they are card products (not Print or Posters).
+				There is a new version called Phoenix version 2 that the engineering team worked on while Paola and I were Co-ops.  Some of the new improvements were a new html 5 builder and
+				the ability to add suites (which are groups of similar type cards)</font></div>
+				<br>
+				<br>
+
+<div id="flipServer">Servers</div>
+<div id="panelServer"><font size="4">Phoenix Products are most likely navigated to from the Stationery & Cards categories on various vendors.  Essentially they are card products (not Print or Posters).
+				There is a new version called Phoenix version 2 that the engineering team worked on while Paola and I were Co-ops.  Some of the new improvements were a new html 5 builder and
+				the ability to add suites (which are groups of similar type cards)</font></div>
+
+</body>
+</html>
